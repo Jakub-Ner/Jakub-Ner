@@ -1,0 +1,66 @@
+---
+import type { GetStaticPathsOptions, Page } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Pagination from '../../components/Pagination.astro';
+import siteConfig from '../../data/site-config';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+import {
+    NEURON_HREF,
+    TALENTY_HREF,
+    NTX_HREF,
+    WROCLAW_HREF,
+    PWR_HREF,
+    PAWEL_DZIKIEWICZ_HREF,
+    TOMASZ_KORALEWSKI_HREF, ADAM_PAWLOWSKI_HREF, JAKUB_GOLUCH_HREF
+} from '../../strings';
+import ProjectPreview from '../../components/ProjectPreview.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+    const posts = (await getCollection('pipelon')).sort(sortItemsByDateDesc);
+    return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
+}
+
+type Props = { page: Page<CollectionEntry<'pipelon'>> };
+
+const { page } = Astro.props;
+const project = page.data;
+---
+
+<BaseLayout
+    title="Pipelon"
+    description="The Pipelon team, including Paweł Dzikiewicz, Tomasz Koralewski, Adam Pawłowski, Jakub Gołuch, and myself, is advancing the Brain-Computer Interface field. As key members of the student organization Neuron at Wrocław University of Science and Technology, our innovative work has earned us the prestigious Młode Talenty Award in 2024. Our project, BoreNoMore, which adjusts gameplay based on user mental states like boredom, achieved international acclaim at the NTX Hackathon. Beyond these projects, we actively participate in various hackathons and initiatives where I have played a crucial role."
+    image={{ src: '/hackYeah2023-pipelon-members.jpeg', alt: 'Image of members of Pipelon during Hack Yeah 2023' }}
+    showHeader={false}
+>
+    <h1 class="text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Pipelon</h1>
+    <img src="/hackYeah2023-pipelon-members.jpeg" alt="Image of members of Pipelon during Hack Yeah 2023"
+         class="w-full object-contain mb-8" />
+    <p class="mb-10">
+        The Pipelon team (<a href={PAWEL_DZIKIEWICZ_HREF}>Paweł Dzikiewicz</a>, <a href={TOMASZ_KORALEWSKI_HREF}>Tomasz
+        Koralewski</a>, <a href={ADAM_PAWLOWSKI_HREF}>Adam Pawłowski</a>, <a href={JAKUB_GOLUCH_HREF}>Jakub Gołuch</a>,
+        and myself) is pushing the boundaries in the Brain-Computer Interface field. We are also key members of the
+        student organization
+        <a href={NEURON_HREF}>Neuron</a> at Wrocław University of Science and Technology.
+        <br><br>
+        Our work as a whole has been recognized with the <a href={TALENTY_HREF}>Młode Talenty Award</a> in the
+        Innovation category in 2024.
+        <br><br>
+        Our idea and demo, BoreNoMore — utilizing user mental states (like boredom) to adjust gameplay - brought us
+        international success at the <a href={NTX_HREF}>NTX Hackathon</a>.
+        <br><br>
+        In addition to these projects, we participate in various hackathons and initiatives. Below are those in which I
+        played a crucial role:
+    </p>
+
+    {project.map((project) =>
+        <ProjectPreview project={project} class="mb-10 sm:mb-12" />)}
+    <Pagination page={page} class="my-16 sm:my-24" />
+
+    <h2 class="text-xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">References</h2>
+    <p class="mb-2 flex flex-col space-y-2">
+        <a href={WROCLAW_HREF}>Interview with Wroclaw.pl.</a>
+        <a href={PWR_HREF}>University of Science and technology about our success in Vienna.</a>
+    </p>
+    <!--<Subscribe class="my-16 sm:my-24" />-->
+</BaseLayout>

@@ -38,66 +38,58 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    title: 'Jakub Ner - Portfolio',
+    subtitle: 'Jakub Ner projects, teams and ideas',
+    description: 'Showcase of my projects, teams and ideas. I am a software engineer with a passion for building products that push the boundaries and are useful to others.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Jakub Ner - Portfolio'
     },
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'About me',
             href: '/'
         },
         {
-            text: 'Projects',
-            href: '/projects'
+            text: 'Citified',
+            href: '/citified'
         },
         {
-            text: 'Blog',
-            href: '/blog'
+            text: 'Pipelon',
+            href: '/pipelon'
         },
         {
-            text: 'Tags',
-            href: '/tags'
-        }
-    ],
-    footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
+            text: 'Other Projects',
+            href: '/other-projects'
         },
         {
             text: 'Contact',
             href: '/contact'
-        },
+        }
+    ],
+    footerNavLinks: [
         {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
+            text: 'Dante Theme',
             href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/jakub-ner-131714187/'
         },
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://www.instagram.com/kubaner2803/'
         },
         {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'GitHub',
+            href: 'https://www.github.com/jakub-ner'
         }
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
+        text: 'I\'m **Jakub Ner**',
         image: {
             src: '/hero.jpeg',
             alt: 'A person sitting at a desk in front of a computer'
