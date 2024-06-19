@@ -8,6 +8,7 @@ import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 import References from '../components/References.astro';
 import Border from '../components/Border.astro';
+import { createBaseController } from 'astro/dist/vite-plugin-astro-server/controller';
 
 const citifiedProjects = (await getCollection('citified')).sort(sortItemsByDateDesc);
 const featuredCitifiedProjects = citifiedProjects.filter(({ data }) => data.isFeatured);
@@ -64,7 +65,7 @@ const featuredPipelonProjects = pipelonPosts.filter(({ data }) => data.isFeature
 
     <Border />
     <References>
-        <a href="/mlode-talenty.jpeg">Innovation Award from Young Talents Jury</a>
+        <a href={siteConfig.baseRoute + 'mlode-talenty.jpeg'}>Innovation Award from Young Talents Jury</a>
 
         <a href="https://www.linkedin.com/in/jakub-ner-131714187/details/recommendations">Wojciech Mandrysz
             recommendation</a>
