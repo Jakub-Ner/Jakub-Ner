@@ -5,7 +5,7 @@ publishDate: 'Jul 06 2024'
 isFeatured: true
 seo:
   image:
-    src: '/citified-bhc-2023.jpeg'
+    src: baseRoute + 'citified-bhc-2023.jpeg'
     alt: Bore No More team during NTX Hackathon 2023 in Vienna
 ---
 

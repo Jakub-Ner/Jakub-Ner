@@ -25,6 +25,7 @@ export type Subscribe = {
 };
 
 export type SiteConfig = {
+    baseRoute: string;
     logo?: Image;
     title: string;
     subtitle?: string;
@@ -39,30 +40,32 @@ export type SiteConfig = {
     projectsPerPage?: number;
 };
 
+const baseRoute = defineConfig.base as string;
 const siteConfig: SiteConfig = {
+    baseRoute: baseRoute,
     title: 'Jakub Ner - Portfolio',
     subtitle: 'Jakub Ner projects, teams and ideas',
     description: 'Showcase of my projects, teams and ideas. I am a software engineer with a passion for building products that push the boundaries and are useful to others.',
     image: {
-        src: '/me.jpeg',
+        src: baseRoute + 'me.jpeg',
         alt: 'Jakub Ner - Portfolio'
     },
     headerNavLinks: [
         {
             text: 'About me',
-            href: defineConfig.base as string,
+            href: baseRoute
         },
         {
             text: 'Citified',
-            href: 'citified'
+            href: baseRoute + 'citified'
         },
         {
             text: 'Pipelon',
-            href: 'pipelon'
+            href: baseRoute + 'pipelon'
         },
         {
             text: 'Featured Projects',
-            href: 'featured-projects'
+            href: baseRoute + 'featured-projects'
         },
     ],
     footerNavLinks: [

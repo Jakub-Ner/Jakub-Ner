@@ -39,10 +39,10 @@ const project = page.data;
 <BaseLayout
     title="Citified"
     description=""
-    image={{ src: '/citified-hack-the-climate.jpeg', alt: 'Image of members of Citified during Hack The Climate 2023' }}
+    image={{ src: siteConfig.baseRoute + 'citified-hack-the-climate.jpeg', alt: 'Image of members of Citified during Hack The Climate 2023' }}
     showHeader={false}
 >
-    <img src="citified-hack-the-climate.jpeg" alt="Image of members of Citified during Hack The Climate 2023"
+    <img src={siteConfig.baseRoute + 'citified-hack-the-climate.jpeg'} alt="Image of members of Citified during Hack The Climate 2023"
          class="w-full object-contain" />
 
     <p class="mb-10 italic">

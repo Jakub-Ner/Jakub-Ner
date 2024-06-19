@@ -18,7 +18,7 @@ const featuredPipelonProjects = pipelonPosts.filter(({ data }) => data.isFeature
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image} showHeader={false}>
 
-    <img src="me.jpeg" alt="Jakub Ner" class="rounded-full w-64 mx-auto my-auto block" />
+    <img src={siteConfig.baseRoute + 'me.jpeg'} alt="Jakub Ner" class="rounded-full w-64 mx-auto my-auto block" />
 
     <article class="mb-16 sm:mb-24">
         <header class="mb-8">
