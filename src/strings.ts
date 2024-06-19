@@ -11,3 +11,12 @@ export const ADAM_PAWLOWSKI_HREF = 'https://www.linkedin.com/in/adam-paw%C5%82ow
 export const JAKUB_GOLUCH_HREF = 'https://www.linkedin.com/in/jakub-goluch/';
 
 // CITIFIED
+export const GUT_HREF = 'https://www.linkedin.com/feed/update/urn:li:activity:7203712115591843840'
+export const HTC_2023 = 'https://nordicedge.org/2023/11/28/model-for-predicting-nutrient-runoff-takes-home-the-win-in-hack-the-climate/'
+export const ZWIAZEK_MIAST_HREF = 'https://www.miasta.pl/aktualnosci/bierun-platforma-do-komunikacji-z-mieszkancami'
+export const AIP_HREF = 'https://www.linkedin.com/posts/aip-pwr_citified-innowacje-startup-ugcPost-7160954129308106753-SE7I?utm_source=share&utm_medium=member_desktop\n'
+
+export const KACPER_GROBELNY_HREF = 'https://www.linkedin.com/in/kacpergrobelny/';
+export const WIKTOR_STANKIEWICZ_HREF = 'https://www.linkedin.com/in/wiktor-stankiewicz-76246329a/';
+export const DAMIAN_SAWKO_HREF = 'https://www.linkedin.com/in/damiansawko/';
+export const MIKOLAJ_JASTRZEBSKI_HREF = 'https://www.linkedin.com/in/miko%C5%82aj-jastrz%C4%99bski/';

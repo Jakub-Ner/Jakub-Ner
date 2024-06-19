@@ -42,7 +42,7 @@ const siteConfig: SiteConfig = {
     subtitle: 'Jakub Ner projects, teams and ideas',
     description: 'Showcase of my projects, teams and ideas. I am a software engineer with a passion for building products that push the boundaries and are useful to others.',
     image: {
-        src: '/dante-preview.jpg',
+        src: '/me.jpeg',
         alt: 'Jakub Ner - Portfolio'
     },
     headerNavLinks: [
@@ -59,13 +59,9 @@ const siteConfig: SiteConfig = {
             href: '/pipelon'
         },
         {
-            text: 'Other Projects',
-            href: '/other-projects'
+            text: 'Featured Projects',
+            href: '/featured-projects'
         },
-        {
-            text: 'Contact',
-            href: '/contact'
-        }
     ],
     footerNavLinks: [
         {
@@ -85,21 +81,26 @@ const siteConfig: SiteConfig = {
         {
             text: 'GitHub',
             href: 'https://www.github.com/jakub-ner'
-        }
+        },
+        {
+            text: 'ArtStation',
+            href:'https://www.artstation.com/kuba_ner'
+        },
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: 'I\'m **Jakub Ner**',
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
-        actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
-        ]
+        text: 'I\'m **Jakub Ner**' +
+            '',
+        // image: {
+        //     src: '/me.jpeg',
+        //     alt: 'A person sitting at a desk in front of a computer'
+        // },
+        // actions: [
+        //     {
+        //         text: 'Get in Touch',
+        //         href: '/contact'
+        //     }
+        // ]
     },
     subscribe: {
         title: 'Subscribe to Dante Newsletter',

@@ -6,11 +6,27 @@ import Pagination from '../../components/Pagination.astro';
 import PostPreview from '../../components/PostPreview.astro';
 import siteConfig from '../../data/site-config';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
-import { NEURON_HREF, TALENTY_HREF, NTX_HREF, WROCLAW_HREF, PWR_HREF } from '../../strings';
+import {
+    NEURON_HREF,
+    TALENTY_HREF,
+    NTX_HREF,
+    WROCLAW_HREF,
+    PWR_HREF,
+    GUT_HREF,
+    HTC_2023,
+    ZWIAZEK_MIAST_HREF,
+    AIP_HREF,
+    KACPER_GROBELNY_HREF,
+    DAMIAN_SAWKO_HREF,
+    MIKOLAJ_JASTRZEBSKI_HREF,
+    WIKTOR_STANKIEWICZ_HREF
+} from '../../strings';
 import ProjectPreview from '../../components/ProjectPreview.astro';
+import References from '../../components/References.astro';
+import Border from '../../components/Border.astro';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const posts = (await getCollection('pipelon')).sort(sortItemsByDateDesc);
+    const posts = (await getCollection('citified')).sort(sortItemsByDateDesc);
     return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
 }
 
@@ -23,34 +39,59 @@ const project = page.data;
 <BaseLayout
     title="Citified"
     description=""
-    image={{ src: '/hackYeah2023-pipelon-members.jpeg', alt: 'Image of members of Pipelon during Hack Yeah 2023' }}
+    image={{ src: '/citified-hack-the-climate.jpeg', alt: 'Image of members of Citified during Hack The Climate 2023' }}
     showHeader={false}
 >
-    <h1 class="text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Citified</h1>
-    <img src="/hackYeah2023-pipelon-members.jpeg" alt="Image of members of Pipelon during Hack Yeah 2023" class="w-full object-contain mb-8"  />
-    <p class="mb-10">
-        The Pipelon team (Paweł Dzikiewicz, Tomasz Koralewski, Adam Pawłowski, Jakub Gołuch, and myself) is pushing the
-        boundaries in the Brain-Computer Interface field. We are also key members of the student organization
-        <a href={NEURON_HREF}>Neuron</a> at Wrocław University of Science and Technology.
-        <br><br>
-        Our work as a whole has been recognized with the <a href={TALENTY_HREF}>Młode Talenty Award</a> in the
-        Innovation category in 2024.
-        <br><br>
-        Our idea and demo, BoreNoMore — utilizing user mental states (like boredom) to adjust gameplay - brought us
-        international success at the <a href={NTX_HREF}>NTX Hackathon</a>.
-        <br><br>
-        In addition to these projects, we participate in various hackathons and initiatives. Below are those in which I
-        played a crucial role:
+    <img src="/citified-hack-the-climate.jpeg" alt="Image of members of Citified during Hack The Climate 2023"
+         class="w-full object-contain" />
+
+    <p class="mb-10 italic">
+        From the left: <a href={KACPER_GROBELNY_HREF}>Kacper Grobelny</a>, <a href={WIKTOR_STANKIEWICZ_HREF}>Wiktor
+        Stankiewicz</a>, myself, <a href={DAMIAN_SAWKO_HREF}>Damian Sawko</a>, <a href={MIKOLAJ_JASTRZEBSKI_HREF}>Mikołaj
+        Jastrzębski</a>.
     </p>
 
+    <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">Citified</h1>
+    <article class="mb-16 sm:mb-24">
+        <div class="max-w-none prose prose-dante sm:prose-lg">
+            <p>
+                Through numerous conversations with city representatives, we identified a gap in communication between
+                officials, investors, and residents. We aim to bridge this gap! Our mission is to create a comprehensive
+                and user-friendly platform where citizens can voice their opinions and understand actions of the city
+                authorities.
+            </p>
+            <h2>Our Achievements </h2>
+            <p>
+                We are proud winners of the prestigious Polish-Norwegian hackathon “Hack the Climate,” organized by the
+                Polish Development Fund and Nordic Edge. This accolade underscores the quality and innovation of our
+                solution. We are also proud to have secured 2nd place in the Grow Up Tech finale, a testament to our
+                dedication and innovation.
+            </p>
+
+            <h2>Our Partnerships</h2>
+            <p> In may 2024, we had a productive meeting with Ms. Agnieszka Jankowska, Chair of the Digitalization
+                Council at the Ministry of Digital Affairs. She expressed great appreciation for our efforts and
+                innovative projects, such as "MieszkamTu" and the Interactive Map of Bieruń, and pledged her support for
+                our development.
+                <br /><br />
+                Until june, we have been collaborating with the city of Bieruń to develop
+                and perfect our project, ensuring it meets the unique needs of the community.
+            </p>
+
+        </div>
+    </article>
+
+    <Border />
     {project.map((project) =>
-        <ProjectPreview project={project} class="mb-10 sm:mb-12" />)}
-    <Pagination page={page} class="my-16 sm:my-24" />
+        <ProjectPreview project={project} class="mb-10 sm:mb-12" href="citified" />)}
 
-    <h2 class="text-xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">References</h2>
-    <p class="mb-2 flex flex-col space-y-2">
-        <a href={WROCLAW_HREF}>Interview with Wroclaw.pl.</a>
-        <a href={PWR_HREF}>University of Science and technology about our success in Vienna.</a>
-    </p>
-    <!--<Subscribe class="my-16 sm:my-24" />-->
+    <Border />
+    <References>
+        <a href={ZWIAZEK_MIAST_HREF}>Związek Miast Polskich about our Platform</a>
+        <a href={AIP_HREF}>Akademicki Inkubator Przedsiębiorczości promotes Citified.</a>
+        <a href={HTC_2023}>Nordic Edge article about us.</a>
+        <a href={GUT_HREF}>2nd place at Grow Up Tech.</a>
+    </References>
+
+
 </BaseLayout>

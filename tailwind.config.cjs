@@ -52,9 +52,19 @@ module.exports = {
                                 textDecorationStyle: 'solid'
                             }
                         },
-                        'h1,h2,h3,h4,h5,h6': {
+                        'h2,h3,h4,h5,h6': {
                             fontFamily: theme('fontFamily.serif'),
                             fontWeight: 500
+                        },
+                        h1: {
+                            fontFamily: theme('fontFamily.serif'),
+                            fontWeight: 500,
+                            fontSize: '1.875rem',
+                            lineHeight: '1.4',
+                            '@media (min-width: 640px)': {
+                                fontSize: '2.5rem',
+                                lineHeight: '1.4'
+                            }
                         },
                         blockquote: {
                             border: 0,

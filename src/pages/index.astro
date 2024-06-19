@@ -6,6 +6,8 @@ import Hero from '../components/Hero.astro';
 import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
+import References from '../components/References.astro';
+import Border from '../components/Border.astro';
 
 const citifiedProjects = (await getCollection('citified')).sort(sortItemsByDateDesc);
 const featuredCitifiedProjects = citifiedProjects.filter(({ data }) => data.isFeatured);
@@ -15,31 +17,57 @@ const featuredPipelonProjects = pipelonPosts.filter(({ data }) => data.isFeature
 ---
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image} showHeader={false}>
-    <Hero />
-    {
-        featuredCitifiedProjects?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Citified</h2>
-                {featuredCitifiedProjects.map((project) => (
-                    <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/citified">View All Projects</Button>
-                </div>
+
+    <img src="/me.jpeg" alt="Jakub Ner" class="rounded-full w-64 mx-auto my-auto block" />
+
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-8">
+            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">Hi!</h1>
+        </header>
+        <div class="max-w-none prose prose-dante sm:prose-lg">
+            <p>I'm Kuba, a Computer Science student with a passion for innovation. I thrive on bringing creative
+                ideas and am determined enough to make them happen.</p>
+
+            <h2>My Journey</h2>
+            <p>During my first year of study, a professor noticed my potential and recommended me to his supervisors.
+                That's how I started working as a Software Engineer in Biometric Californian startup - Tascent.
+                My journey began with fixing bugs on a Linux device. I then transitioned to developing a
+                proof-of-concept backend in GoLang, a language I quickly grew to love for its minimalistic style. The
+                highlight of my time at Tascent was creating software to remove undesirable parts from short videos.
+                With guidance from my mentor, I modified an existing annotation tool, prepared data, trained a model,
+                validated it, and developed a tool that used predictions to identify unwanted segments.</p>
+
+            <p>Next, I moved to Fream, where I worked on developing a backend system for a feeding project.
+                Unfortunately, this project was shut down by the client.</p>
+
+            <h2>Current Focus</h2>
+            <p>Now, I am dedicated to my own projects, competing in hackathons, and collaborating with the <a
+                href="/pipelon">Pipelon</a> and <a href="/citified">Citified</a> teams. I continuously challenge myself
+                to expand my knowledge and skills.
+            </p>
+
+
+            <Border />
+            <h2>Read more:</h2>
+
+            <div class="flex flex-col space-y-8 sm:space-y-0 sm:flex-row sm:space-x-8">
+                <Button href="/citified">Citified</Button>
+
+                <Button href="/pipelon">Pipelon</Button>
+
+                <Button href="/featured-projects">Featured projects</Button>
             </div>
-        )
-    }
-    {
-        featuredPipelonProjects?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Pipelon</h2>
-                {featuredPipelonProjects.map((project) => (
-                    <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/pipelon">View All projects</Button>
-                </div>
-            </div>
-        )
-    }
+
+
+        </div>
+    </article>
+
+    <Border />
+    <References>
+        <a href="/mlode-talenty.jpeg">Innovation Award from Young Talents Jury</a>
+
+        <a href="https://www.linkedin.com/in/jakub-ner-131714187/details/recommendations">Wojciech Mandrysz
+            recommendation</a>
+
+    </References>
 </BaseLayout>

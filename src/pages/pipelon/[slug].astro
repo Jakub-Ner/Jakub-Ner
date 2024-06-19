@@ -7,6 +7,7 @@ import PostPreview from '../../components/PostPreview.astro';
 import Subscribe from '../../components/Subscribe.astro';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 import { slugify } from '../../utils/common-utils';
+import ProjectPreview from '../../components/ProjectPreview.astro';
 
 export async function getStaticPaths() {
     const posts = (await getCollection('pipelon')).sort(sortItemsByDateDesc);
@@ -21,7 +22,7 @@ export async function getStaticPaths() {
     }));
 }
 
-type Props = { post: CollectionEntry<'projects'>; prevPost: CollectionEntry<'projects'>; nextPost: CollectionEntry<'projects'> };
+type Props = { post: CollectionEntry<'pipelon'>; prevPost: CollectionEntry<'pipelon'>; nextPost: CollectionEntry<'pipelon'> };
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
@@ -58,9 +59,9 @@ const { Content } = await post.render();
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
-                {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-                {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+                <h2 class="mb-6 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
+                {nextPost && <ProjectPreview project={nextPost} href="pipelon" class="mb-10 sm:mb-12" headingLevel="h3" />}
+                {prevPost && <ProjectPreview project={prevPost} href="pipelon" class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
         )
     }

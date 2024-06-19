@@ -2,14 +2,13 @@
 import { type CollectionEntry, getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
-// import FormattedDate from '../../components/FormattedDate.astro';
 import PostPreview from '../../components/PostPreview.astro';
-import Subscribe from '../../components/Subscribe.astro';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 import { slugify } from '../../utils/common-utils';
+import ProjectPreview from '../../components/ProjectPreview.astro';
 
 export async function getStaticPaths() {
-    const posts = (await getCollection('pipelon')).sort(sortItemsByDateDesc);
+    const posts = (await getCollection('citified')).sort(sortItemsByDateDesc);
     const postCount = posts.length;
     return posts.map((post, index) => ({
         params: { slug: post.slug },
@@ -21,7 +20,7 @@ export async function getStaticPaths() {
     }));
 }
 
-type Props = { post: CollectionEntry<'projects'>; prevPost: CollectionEntry<'projects'>; nextPost: CollectionEntry<'projects'> };
+type Props = { post: CollectionEntry<'citified'>; prevPost: CollectionEntry<'citified'>; nextPost: CollectionEntry<'citified'> };
 
 const { href } = Astro.url;
 const { post, prevPost, nextPost } = Astro.props;
@@ -58,9 +57,9 @@ const { Content } = await post.render();
     {
         (prevPost || nextPost) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
-                {nextPost && <PostPreview post={nextPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
-                {prevPost && <PostPreview post={prevPost} class="mb-10 sm:mb-12" headingLevel="h3" />}
+                <h2 class="text-xl font-serif italic sm:mb-16 sm:text-2xl">Read Next</h2>
+                {nextPost && <ProjectPreview project={nextPost} href="citified" class="mb-10 sm:mb-12" headingLevel="h3" />}
+                {prevPost && <ProjectPreview project={prevPost} href="citified" class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>
         )
     }
