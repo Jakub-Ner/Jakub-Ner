@@ -5,17 +5,17 @@ publishDate: 'Jul 06 2024'
 isFeatured: true
 seo:
   image:
-    src: '/project-1.jpg'
+    src: '/Jakub-Ner/project-1.jpg'
     alt: Project preview
 ---
 
-![Members of Pipelon during Hack Yeah 2023](/hackYeah2023-pipelon-members.jpeg)
+![Members of Pipelon during Hack Yeah 2023](/Jakub-Ner/hackYeah2023-pipelon-members.jpeg)
 
 ## Hackathons Projects
 
 ### [Bore No More](https://github.com/PipelonDevs/ntx_hack_2023)
 
-We developed BoreNoMore, which earned 2nd place at
+We developed [BoreNoMore](/Jakub-Ner/pipelon/bore-no-more) demo, which earned 2nd place at
 the [NTX Hackathon 2023](https://medium.com/neurotechx/the-second-global-annual-ntx-hackathon-2023-c23a68aef1a4) - a neurotech event, that
 engaged over 1000 global participants from more than 50 countries. Our project implemented a boredom detection
 classifier for gamers, demonstrated by adapting Tetris difficulty based on the player's boredom level. For real-time

@@ -44,7 +44,7 @@ baseline signal extraction.
 
 ## Web & Mobile
 
-### [Interactive Map of Bieruń](/citified/interactive-bierun-map)
+### [Interactive Map of Bieruń](/Jakub-Ner/citified/interactive-bierun-map)
 
 Following Citified win at Hack The Climate 2023, my team delivered the interactive map of Bieruń within 7 months. As the
 lead
@@ -54,7 +54,7 @@ and orchestrating containerized services, and frontend **React.js** implementati
 enhancements and prerendering with **Node.js**.
 Additionally, I handled client communication and requirements gathering.
 
-### [WorCare](/citified/hackathons/#worcare--best-hacks-2023-2nd-prize)
+### [WorCare](/Jakub-Ner/citified/hackathons/#worcare--best-hacks-2023-2nd-prize)
 
 I contributed to developing WorCare, a healthcare app for employers. My role focused on building the **Next.js**
 frontend
@@ -93,7 +93,7 @@ only with travel. Our solution encourages exploration, engages the community, an
 heritage
 closer to the public.
 
-### [Questapp](/pipelon/hackathons/#questappka--hackyeah-2023-finalist)
+### [Questapp](/Jakub-Ner/pipelon/hackathons/#questappka--hackyeah-2023-finalist)
 
 **React.js** platform with **Flask** backend.
 
@@ -101,13 +101,13 @@ closer to the public.
 
 ## C#
 
-### [Bore No More](/pipelon/bore-no-more)
+### [Bore No More](/Jakub-Ner/pipelon/bore-no-more)
 
-[Pipelon](/pipelon) the biggest project, and also our bachelor thesis, that focuses on creating a C# framework for seamless BCI
+[Pipelon](/Jakub-Ner/pipelon) the biggest project, and also our bachelor thesis, that focuses on creating a C# framework for seamless BCI
 integration, that facilitates device connection, EEG signal classification, callbacks invocation and **Unity** integration.
 
 ### [Tetris BCI Experiment](https://github.com/PipelonDevs/tetris-bore-no-more)
-Self-contained experiment that enables easy EEG data collection and annotations. Created as part of the [Bore No More](/pipelon/bore-no-more) project
+Self-contained experiment that enables easy EEG data collection and annotations. Created as part of the [Bore No More](/Jakub-Ner/pipelon/bore-no-more) project
 
 ### [TowerDefense](https://github.com/PipelonDevs/TowerDefence)
 **Unity** PoC, enhanced by dialogues written with [Ink language](https://www.inklestudios.com/ink/).
@@ -123,7 +123,7 @@ EEG-collector is a **Python** application designed to simplify the collection, v
 data. Built with Tkinter and Matplotlib, this simple GUI facilitates EEG data collection while adhering to format
 standards and storing annotations in JSON.
 
-### [NoteScribe](/pipelon/hackathons/#notescribe--hack4wroclawtech-2023-3rd-place)
+### [NoteScribe](/Jakub-Ner/pipelon/hackathons/#notescribe--hack4wroclawtech-2023-3rd-place)
 
 Note Scribe is an **Python** application for scribing notes from documents and articles using LLM technology. It
 leverages

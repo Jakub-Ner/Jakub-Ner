@@ -1,5 +1,6 @@
 ---
 import type { HTMLAttributes } from 'astro/types';
+import siteConfig from '../data/site-config';
 
 type AnchorProps = HTMLAttributes<'a'> & { type?: never };
 type ButtonProps = HTMLAttributes<'button'> & { href?: never };
@@ -13,7 +14,7 @@ const buttonClasses =
 
 {
     href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
+        <a href={siteConfig.baseRoute + href} class:list={[buttonClasses, className]} {...rest}>
             <slot />
         </a>
     ) : (

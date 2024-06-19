@@ -9,7 +9,7 @@ seo:
     alt: Bore No More team during NTX Hackathon 2023 in Vienna
 ---
 
-![Pipelon team during NTX Hackathon 2023 in Vienna](/NTX-pipelon-members.png)
+![Pipelon team during NTX Hackathon 2023 in Vienna](/Jakub-Ner/NTX-pipelon-members.png)
 
 ## Motivation
 

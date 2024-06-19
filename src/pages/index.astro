@@ -42,7 +42,7 @@ const featuredPipelonProjects = pipelonPosts.filter(({ data }) => data.isFeature
 
             <h2>Current Focus</h2>
             <p>Now, I am dedicated to my own projects, competing in hackathons, and collaborating with the <a
-                href="/pipelon">Pipelon</a> and <a href="/citified">Citified</a> teams. I continuously challenge myself
+                href={siteConfig.baseRoute + 'pipelon'}>Pipelon</a> and <a href={siteConfig.baseRoute + 'citified'}>Citified</a> teams. I continuously challenge myself
                 to expand my knowledge and skills.
             </p>
 
@@ -51,11 +51,11 @@ const featuredPipelonProjects = pipelonPosts.filter(({ data }) => data.isFeature
             <h2>Read more:</h2>
 
             <div class="flex flex-col space-y-8 sm:space-y-0 sm:flex-row sm:space-x-8">
-                <Button href="/citified">Citified</Button>
+                <Button href="citified">Citified</Button>
 
-                <Button href="/pipelon">Pipelon</Button>
+                <Button href="pipelon">Pipelon</Button>
 
-                <Button href="/featured-projects">Featured projects</Button>
+                <Button href="featured-projects">Featured projects</Button>
             </div>
 
 
