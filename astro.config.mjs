@@ -6,6 +6,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
     site: 'https://jakub-ner.github.io',
+    base: '/Jakub-Ner/',
     integrations: [
         mdx(),
         sitemap(),

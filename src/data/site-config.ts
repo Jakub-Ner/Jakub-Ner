@@ -1,3 +1,5 @@
+import defineConfig  from '../../astro.config.mjs';
+
 export type Image = {
     src: string;
     alt?: string;
@@ -48,19 +50,19 @@ const siteConfig: SiteConfig = {
     headerNavLinks: [
         {
             text: 'About me',
-            href: '/'
+            href: defineConfig.base as string,
         },
         {
             text: 'Citified',
-            href: '/citified'
+            href: 'citified'
         },
         {
             text: 'Pipelon',
-            href: '/pipelon'
+            href: 'pipelon'
         },
         {
             text: 'Featured Projects',
-            href: '/featured-projects'
+            href: 'featured-projects'
         },
     ],
     footerNavLinks: [
