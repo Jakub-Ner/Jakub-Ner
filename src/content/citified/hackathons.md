@@ -13,14 +13,14 @@ seo:
 
 ## Hackathons Projects
 
-### [Interactive Map of Bieruń](https://www.linkedin.com/posts/jakub-ner-131714187_bieruagm-smartcity-pfrdlamiast-activity-7135282533734170624-3NY5?utm_source=share&utm_medium=member_desktop)
+### [Interactive Map of Bieruń](https://www.linkedin.com/posts/jakub-ner_bieruagm-smartcity-pfrdlamiast-activity-7135282533734170624-lych?utm_source=share&utm_medium=member_desktop)
 
 We developed [Interactive Map of Bieruń](https://interaktywnamapa.bierun.pl/mapa/start) (IMB), which earned 1st place at
 Hack The Climate 2023. IMB is a platform designed to facilitate effective communication between city authorities and
 residents, thereby enhancing the democratization of sustainable urban planning processes. This innovative tool aims to
 empower citizens and promote more inclusive decision-making in the development of Bieruń. [Read more](/Jakub-Ner/citified/interactive-bierun-map)
 
-### [WorCare | Best Hacks 2023, 2nd Prize](https://www.linkedin.com/posts/jakub-ner-131714187_during-best-hacks-2023-my-team-for-the-activity-7126364575158927360-0yRC?utm_source=share&utm_medium=member_desktop)
+### [WorCare | Best Hacks 2023, 2nd Prize](https://www.linkedin.com/posts/jakub-ner_during-best-hacks-2023-my-team-for-the-activity-7126364575158927360-9ReY?utm_source=share&utm_medium=member_desktop)
 
 We developed [WorCare](https://worcare.my.canva.site/), a healthcare app for employers that incentivizes employees to
 prioritize their health by rewarding

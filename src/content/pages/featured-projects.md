@@ -30,6 +30,10 @@ Halma, a Chinese checkers variant where the goal is to reach the opponent's base
 This project involves a pipeline that processes EEG experiment data. It lazy loads the data, preprocesses it, splits it
 into 1-second intervals, shuffles the data, and then uses it to create mental state classifiers with **PyTorch**.
 
+### [Genetic Algorithms](https://github.com/Jakub-Ner/GeneticAlgorithms)
+
+Implementation of genetic algorithm that finds optimal solution for a knapsack problem in **C++**.
+
 ### [Brain waves analysis](https://github.com/Jakub-Ner/EEG-Feature-Analysis)
 
 This project uses **R** to analyze EEG data
@@ -76,17 +80,17 @@ Speech-to-Text, and GPT-3, even before it became trendy. For the backend, we uti
 
 ### [Expo SMS](https://github.com/Jakub-Ner/expo-sms-module)
 
-A Kotlin module for sending and receiving SMS messages with bindings in JavaScript, designed to work seamlessly as an
+A **Kotlin** module for sending and receiving SMS messages with bindings in **JavaScript**, designed to work seamlessly as an
 Expo module.
 
 ### [Android projects](https://github.com/Jakub-Ner/android-projects)
 
-A collection of Android projects where I explored various Android development concepts, including Fragments, Activities,
+A collection of **Android** projects where I explored various Android development concepts, including Fragments, Activities,
 Layouts, Navigation, Drawers, and the Jetpack Compose Toolkit.
 
 ### [History Compass](https://worcare.my.canva.site/kompas-historii)
 
-We developed History Compass, a React-Native app that uses an API to provide information about monuments. The app shows
+We developed History Compass, a **React-Native** app that uses an API to provide information about monuments. The app shows
 the nearest monuments and redirects users to detailed pages for more information, comments, or saving for later. The
 challenge was addressing the lack of comprehensive records, fading memories, and the tendency to associate sightseeing
 only with travel. Our solution encourages exploration, engages the community, and brings information about Polish
@@ -103,11 +107,11 @@ closer to the public.
 
 ### [Bore No More](/Jakub-Ner/pipelon/bore-no-more)
 
-[Pipelon](/Jakub-Ner/pipelon) the biggest project, and also our bachelor thesis, that focuses on creating a C# framework for seamless BCI
+[Pipelon](/Jakub-Ner/pipelon) the biggest project, and also our bachelor thesis, that focuses on creating a **C#** framework for seamless BCI
 integration, that facilitates device connection, EEG signal classification, callbacks invocation and **Unity** integration.
 
 ### [Tetris BCI Experiment](https://github.com/PipelonDevs/tetris-bore-no-more)
-Self-contained experiment that enables easy EEG data collection and annotations. Created as part of the [Bore No More](/Jakub-Ner/pipelon/bore-no-more) project
+Self-contained **Unity** experiment that enables easy EEG data collection and annotations. Created as part of the [Bore No More](/Jakub-Ner/pipelon/bore-no-more) project
 
 ### [TowerDefense](https://github.com/PipelonDevs/TowerDefence)
 **Unity** PoC, enhanced by dialogues written with [Ink language](https://www.inklestudios.com/ink/).
