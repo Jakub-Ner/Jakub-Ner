@@ -25,9 +25,9 @@ and
 alpha-beta pruning versions. It also analyzes different heuristics and parameters. The algorithm is demonstrated using
 Halma, a Chinese checkers variant where the goal is to reach the opponent's base first.
 
-### [EEG classifier](https://github.com/PipelonDevs/EEG_Datasets/tree/main/Classifier)
+### [EEG classifier](https://github.com/PipelonDevs/Classifier-Builder)
 
-This project involves a pipeline that processes EEG experiment data. It lazy loads the data, preprocesses it, splits it
+This project involves a pipeline that processes EEG experiment data. It lazily loads the data, preprocesses it, splits it
 into 1-second intervals, shuffles the data, and then uses it to create mental state classifiers with **PyTorch**.
 
 ### [Genetic Algorithms](https://github.com/Jakub-Ner/GeneticAlgorithms)
