@@ -88,6 +88,10 @@ const siteConfig: SiteConfig = {
             href: 'https://www.github.com/jakub-ner'
         },
         {
+          text: 'Medium',
+          href: 'https://medium.com/@kubaner1'
+        },
+        {
             text: 'ArtStation',
             href:'https://www.artstation.com/kuba_ner'
         },
