@@ -64,6 +64,10 @@ const siteConfig: SiteConfig = {
             href: baseRoute + 'pipelon'
         },
         {
+            text: 'BCI Store',
+            href: baseRoute + 'bci-store'
+        },
+        {
             text: 'Featured Projects',
             href: baseRoute + 'featured-projects'
         },
