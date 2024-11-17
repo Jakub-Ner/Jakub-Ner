@@ -11,6 +11,13 @@ challenge myself, simply have fun or all together.
 
 ## Machine Learning
 
+### [Face Recognition Pipeline](https://github.com/Jakub-Ner/FaceRecognitionPipeline/blob/master/README.md)
+Project developed with [Mikołaj Jastrzębski](https://www.linkedin.com/in/miko%C5%82aj-jastrz%C4%99bski/). We utilized BlazeFace for face detection, our custom model for image quality assessment, and triplet loss for face recognition.
+
+### [CNN + SSD course](https://github.com/Jakub-Ner/CNNs-research)
+The project is aimed at exploring and understanding various concepts in computer vision. From basic image processing techniques to advanced CNN architectures, 
+this repository serves as a learning and experimentation ground. Topics relate to [udemy course](https://www.udemy.com/certificate/UC-cf6c990f-316e-43c6-924c-43b1f3de5bc3/) but are not limited to it.
+
 ### [Path Searching algorithms](https://github.com/Jakub-Ner/Sztuczna-inteligencja/tree/main/ZAD1%20Rozwi%C4%85zywanie%20problem%C3%B3w%20przez%20przeszukiwanie)
 
 This project compares pathfinding algorithms for public transport routes (MPK) using **Python**. It focuses on using
@@ -120,6 +127,12 @@ Self-contained **Unity** experiment that enables easy EEG data collection and an
 ------------------------------------------------
 
 ## Others
+
+### [Mind-Collector](https://github.com/Jakub-Ner/Real-Life-EEG-Collection/tree/master/Mind-Collector)
+**Python** tool that enables data acuisition and automatic annotations, while a subject play games like League of Legends. It handles visual differences on scoreboards to trigger events like `kill` or `death`. App is highly customizable and easily may be used for different games. You can read more [in my medium article](https://medium.com/@kubaner1/capturing-the-brain-waves-f3dd2c9d7de5?sk=61ac5a750f0c75c3b684821a03d8a44b)
+
+### [Event-Monitor](https://github.com/Jakub-Ner/Real-Life-EEG-Collection/tree/master/Event-Monitor)
+**Python** app for real-time visualisation of EEG and clasification results. May be used as a monitoring tool for experiments (like games).
 
 ### [EEG-collector](https://github.com/PipelonDevs/EEG-Collector)
 
