@@ -46,5 +46,5 @@ adoption of BCI technology and unlock new possibilities in the field.
     - integration with Unity
 4. We are planning to create multiple applications (not only games) that will showcase the capabilities of our
    framework. We already have agreement on cooperation with [TK Games](https://www.facebook.com/pwrtkgames/). 
-5. We are planning to build a website with documentation and tutorials.
+5. We are working on [Documentation website](https://borenomore.github.io/BoreNoMore/)
 6. We are planning to validate effectiveness of passive Brain-Computer interface and prepare publication about it.
