@@ -68,8 +68,7 @@ Additionally, I handled client communication and requirements gathering.
 ### [WorCare](/Jakub-Ner/citified/hackathons/#worcare--best-hacks-2023-2nd-prize)
 
 I contributed to developing WorCare, a healthcare app for employers. My role focused on building the **Next.js**
-frontend
-and backend with **MongoDB**. Additionally, I uniquely pitched our idea by
+backend with **MongoDB**. Additionally, I uniquely pitched our idea by
 incorporating [Jan Kochanowski's "To Health"](https://www.babelmatrix.org/works/pl/Kochanowski,_Jan/Na_zdrowie/en/5245-To_Health)
 trifle. Our innovation earned 2nd prize in the Best Hacks 2023.
 
