@@ -59,7 +59,7 @@ baseline signal extraction.
 
 Following Citified win at Hack The Climate 2023, my team delivered the interactive map of Bieruń within 7 months. As the
 lead
-software engineer, I managed the entire technical process: designing the backend in **Nest.js**, DevOps tasks like
+software engineer, I managed the entire technical process: designing the backend in **NestJS**, DevOps tasks like
 configuring nginx
 and orchestrating containerized services, and frontend **React.js** implementation including map functionalities, SEO
 enhancements and prerendering with **Node.js**.
